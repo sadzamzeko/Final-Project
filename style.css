@@ -36,3 +36,21 @@ hr{
     opacity: 0.4;
     height: 5px;
 }
+article{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+article ul{
+    width: 255px;
+    height: 128px;
+    border: 5px solid white;
+    padding: 30px 40px 30px 20px;
+}
+
+
+article ul li:nth-child(2){
+    margin-top: 5px;
+    font-size: 35px;
+}
