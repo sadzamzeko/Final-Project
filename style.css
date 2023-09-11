@@ -54,3 +54,25 @@ article ul li:nth-child(2){
     margin-top: 5px;
     font-size: 35px;
 }
+section{
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: ; */
+    flex-direction: row-reverse;
+    margin-top: 150px;
+    padding : 0 150px;
+}
+section .pl img{
+    width: 290px;
+    height: 290px;;
+}
+section .sec-second-box{
+    width: 400px;
+}
+.sec-second-box h1{
+    font-size: 80px;
+}
+.sec-second-box p {
+    margin: 20px 0 ;
+    font-size: 15px;
+}
