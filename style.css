@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "antonio";
+    src: url(assets/fonts/antonio.woff2);
+
+   
+}
+@font-face {
+    font-family: "spartan";
+    src: url(assets/fonts/league-spartan-v11-latin-700.woff2);
+}
+@font-face {
+    font-family: "spartanReg";
+    src: url(assets/fonts/league-spartan-v11-latin-regular.woff2);
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -15,17 +31,20 @@ body{
     background-color: #070724;   
     background-image: url(assets/images/background-stars.svg);
     background-size: cover;
+    font-family: antonio , Arial, Helvetica, sans-serif; 
 }
-
 header{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 50px 0;
 }
 header ul{
     display: flex;
 }
 nav ul li{
+    /* background-color: red; */
+    font-family:  spartan , Arial, Helvetica, sans-serif;
     margin-right: 38px;
 }
 .last-nav{
@@ -36,43 +55,84 @@ hr{
     opacity: 0.4;
     height: 5px;
 }
+
 article{
-    margin-top: 70px;
+    margin: 70px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
 }
 
 article ul{
-    width: 255px;
-    height: 128px;
-    border: 5px solid white;
-    padding: 30px 40px 30px 20px;
+    width: 200px;
+    height: 110px;
+    border: 2px solid rgb(255, 255, 255 , 0.3);
+    padding: 30px 0 15px 15px;
 }
-
+article ul li:nth-child(1){
+    font-family: spartanReg , Arial, Helvetica, sans-serif;
+}
 
 article ul li:nth-child(2){
     margin-top: 5px;
-    font-size: 35px;
+    font-size: 27px;
 }
+
 section{
     display: flex;
     justify-content: space-around;
-    /* justify-content: ; */
+    align-items: center;
     flex-direction: row-reverse;
-    margin-top: 150px;
-    padding : 0 150px;
+    margin: 130px 70px;
+    /* padding : 0 80px; */
 }
 section .pl img{
     width: 290px;
-    height: 290px;;
+    height: 290px;
+    margin-left: 100px;
 }
 section .sec-second-box{
-    width: 400px;
+    margin-left: 60px;
+    width: 430px;
 }
 .sec-second-box h1{
-    font-size: 80px;
+    font-size: 50px;
+    text-transform: uppercase;
 }
 .sec-second-box p {
-    margin: 20px 0 ;
+    font-family: spartan, Arial, Helvetica, sans-serif;
+    margin: 30px 0 ;
     font-size: 15px;
 }
+.button-box button{
+    width: 100%;
+}
+
+.box{
+    font-family: spartan, Arial, Helvetica, sans-serif;
+    margin: 22px 0 ;
+    padding: 10px 0px 10px 25px;
+    /* display: flex; */
+    border: 1px solid #fff;
+    font-size:17px;
+}
+.box:hover{
+    background-color: grey  ;
+    opacity:  0.8;
+    cursor: pointer;
+}
+
+.box:active {
+    background-color: #419EBB;
+}
+.box span:nth-child(2){
+    padding-left: 15px;
+}
+/* .box:visited {
+    color: #00FF00;
+  } */
+
+  .wikip{
+    text-decoration: underline;
+  }
